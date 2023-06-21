@@ -7,12 +7,20 @@ HTML:
   <title>JS Bin</title>
 </head>
 <body>
--<div id="page">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<div id="page">
   <div id="header-page">
   <div id="header">
     <div id="logo">
       <h1> Temp Logo </h1>
-      
+      <button type="button">Click Me!</button>
     </div>
   </div>
   </div>
@@ -41,6 +49,21 @@ HTML:
       <h2> Column 6 </h2>
       <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
     </div>
+    
+<h1>The progress element</h1>
+
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+    <div id="page">
+      <div id="footer-page">
+        <div id="footer">
+          <h2> Thanks for looking</h2>
+          <footer>
+  <p>Author: Zachary Borkran<br>
+  <a href="mailto:bork@example.com">bork@example.com</a></p>
+             
+</footer>
+
     </div>
   </div>
   
@@ -112,12 +135,13 @@ h1, h2{
 #sixColumns #column2{
     float: left;
     width: 300px;
-    transform: rotate(45deg)
+    transform: rotate(180deg)
 }
 
 #sixColumns #column3{
     float: right;
     width: 300px;
+    transform: rotate(45deg)
  }
 
 #sixColumns #column4{
@@ -135,6 +159,3 @@ h1, h2{
     float: right;
     width: 300px;
  }
-
-
-  
