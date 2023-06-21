@@ -1,0 +1,178 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<div id="page">
+  <div id="header-page">
+  <div id="header">
+    <div id="logo">
+      <img src="https://as1.ftcdn.net/v2/jpg/01/75/26/36/1000_F_175263660_MpFj4Kui7HMcarUWkDyHFrBlhyygSjee.jpg"/>
+      
+      <h1> Fort Collins Tetons </h1>
+      
+    </div>
+  </div>
+  </div>
+  <div id="sixColumns">
+    <div id="column1">
+      <h2> Column 1 </h2>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </div>
+     <div id="column2">
+      <h2> Column 2 </h2>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </div>
+     <div id="column3">
+      <h2> Column 3 </h2>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </div>
+     <div id="column4">
+      <h2> Column 4 </h2>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </div>
+     <div id="column5">
+      <h2> Column 5 </h2>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </div>
+     <div id="column6">
+      <h2> Column 6 </h2>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </div>
+  </div>
+       <div id="page">
+  <div id="footer-page">
+  <div id="footer">
+    <div id="logo">
+      <img src="https://as1.ftcdn.net/v2/jpg/01/75/26/36/1000_F_175263660_MpFj4Kui7HMcarUWkDyHFrBlhyygSjee.jpg"/>
+      <h2> Where Everything is Twice as Nice </h2>
+    </div>
+    </div>
+    </div>
+  </div>
+  
+  <!-- End HTML -->
+  
+  <!-- CSS -->
+  body{
+  background-image: url(https://as1.ftcdn.net/v2/jpg/05/40/81/44/1000_F_540814406_jT5q2pzAwHLf8BVDmwO3ovla2zjp0UGh.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-size: cover;
+  
+  font-family: "Abel", san serif;
+  font-size: 20px;
+  color: #3B3B3B;
+  
+}
+
+h1, h2 {
+  font-family: "Gill Sans MT"
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    color: #111111;
+    text-align: center;
+  
+}
+
+img{
+  height: 150px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  
+  
+}
+#header{
+  width: 1000px;
+  margin: 150px;
+  
+}
+
+#logo h1{
+  line-height: 150px;
+  letter-spacing: -1px;
+  font-size: 5.8em;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgba(250,250,250,0.1);
+  
+}
+
+#sixColumns{
+  overflow: hidden;
+  width: 1000px;
+  margin: 0px auto;
+  padding: 30px 30px;  
+  
+  background: rgba(250,250,250,0.4);
+  
+}
+
+#sixColumns h2{
+  padding: 0px 9px 20px 0px;
+  font-size: 40px;
+  letter-spacing: -2px;
+  
+}
+  
+#sixColumns #column1{
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+    transform: rotate(-90deg)
+}
+
+#sixColumns #column2{
+    float: left;
+    width: 300px;
+    transform: rotate(45deg)
+}
+
+#sixColumns #column3{
+    float: right;
+    width: 300px;
+  transform: rotate(180deg)
+ }
+
+#sixColumns #column4{
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+}
+
+#sixColumns #column5{
+    float: left;
+    width: 300px;
+}
+
+#sixColumns #column6{
+    float: right;
+    width: 300px;
+ }
+
+#footer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  margin: 150px;
+}
+
+#footer h2{
+    line-height: 150px;
+  letter-spacing: -1px;
+  font-size: 1.8em;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgba(250,250,250,0.1);
+  background: rgba(250,250,250,0.69)
+}
+
+<!-- End CSS -->
