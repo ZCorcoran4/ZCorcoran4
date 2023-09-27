@@ -1,5 +1,5 @@
 html
-<html>
+-<html>
 <head>
 
   <div>
@@ -167,11 +167,43 @@ table, th, td {
     <p>I don't know how this went. But we're going to use it.</p> 
   </div>
 </div>
-  
 
 </body>
+   <body>
+     <div class="schedulesection">
+       
+       <h2> Future Sporting Events </h2>
+       
+       <div id="btnContainer">
+  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> September</button> 
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> October</button>
+</div>
+<br>
 
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h3>Women's Volleyball</h3>
+    
+    <p>September 28 Home @7pm</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h3>Football</h3>
+    <img src="https://www.gannett-cdn.com/presto/2019/11/10/PCHI/f612b0a4-269e-45d1-8e55-d2ef7eb6e864-Waverly_Galia_L0A4866.jpg?width=1320&height=944&fit=crop&format=pjpg&auto=webp" alt="Football" style="width:80%">
+    <p>September 29 Home @7pm</p>
+  </div>
+</div>
 
+<div class="row">
+  <div class="column" style="background-color:#ccc;">
+    <h3>Cross Country</h3>
+    <p>Who Cares</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h3>Soccer</h3>
+    <p>Don't Care</p>
+  </div>
+</div>
+       
 
 
 
@@ -191,7 +223,7 @@ table, th, td {
 
 
 CSS
--/* Padding for the scoreboard */
+/* Padding for the scoreboard */
 .table {
   padding-left: 10px;
   padding-right: 10px;
@@ -231,6 +263,7 @@ body {
   font-family: Sans-serif;
   padding-left: 24px;
   padding-right: 24px;
+  border: 3px solid #000000;
 }
 
 /* Links inside the navbar */
@@ -255,7 +288,7 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 14px 16px 14px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -303,6 +336,8 @@ body {
   width: 25%;
   float: left;
   padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 12px solid #86868B;
 }
 
 .card:hover {
@@ -312,3 +347,92 @@ body {
 .container {
   padding: 5px 16px;
 }
+
+/* Schedule Section */
+.schedulesection {
+  float: center;
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 
+}
+
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+JS
+fitty('h1');
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
