@@ -1,11 +1,12 @@
 html
--<html>
+<html>
 <head>
 
   <div>
     <style>
+      <div class="scoreboard table">
       table, th, td {
-        boder: 1px solid;
+        border: 1px solid;
       }
     </style>
     <div style="overflow-x:auto;">
@@ -22,27 +23,27 @@ html
         <td>Oct 20</td>
       </tr>
     </thead>
-      <th>Miami Trace 27</th>
-      <th>Waverly 42</th>
-      <th>Waverly 28</th>
-      <th>Waverly 48</th>
-      <th>Ports West 24</th>
-      <th>Waverly 56</th>
-      <th>Waverly</th>
-      <th>Waverly</th>
-      <th>Waverly</th>
-      <th>Waverly</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13251/20200113140525_663_mascot300.jpg" alt="MT" width="20">Miami Trace 27</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly 42</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly 28</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly 48</th>
+      <th><img src="http://static.hudl.com/users/prod/1789283_9049cdaffc464e7182611185b65ca02c.jpg" alt="senators" width="20">Ports West 24</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly 56</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly</th>
+      <th><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly</th>
     </tr>
-      <td>Waverly 26</td>
-      <td>Zane Trace 28</td>
-      <td>Unioto 14</td>
-      <td>Valley 8</td>
-      <td>Waverly 21</td>
-      <td>Oak Hill 7</td>
-      <td>Minford</td>
-      <td>Wheelersburg</td>
-      <td>Northwest</td>
-      <td>Mt. Healthy</td>
+      <td><img src="https://pbs.twimg.com/profile_images/1522013657877557249/YOTERpPf_400x400.jpg" alt="tigerpaw" width="20">Waverly 26</td>
+      <td><img src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https:%2F%2Fstorage.googleapis.com%2Fproduction-bluehost-v1-0-9%2F229%2F997229%2FMfZD49li%2Fd2340bd0f0b649d5984c015790b64261&methods=resize%2C1000%2C5000" alt="zt" width="20">Zane Trace 28</td>
+      <td><img src="http://schoolassets.s3.amazonaws.com/logos/25182/25182.gif" alt="tanks" width="20">Unioto 14</td>
+      <td><img src="https://sbl-assets.s3.amazonaws.com/uploads/production/school/25319/image/Valley__OH__Indians_Logo.png" alt="indians" width="20">Valley 8</td>
+      <td><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13553/20181010204448_3_mascot300.png" alt="tigerpaw" width="20">Waverly 21</td>
+      <td><img src="https://bloximages.chicago2.vip.townnews.com/vintonjacksoncourier.com/content/tncms/assets/v3/editorial/3/ce/3ce8f8a7-1381-5bb5-a3ca-56209f1865f3/5eb1b7f536f97.image.jpg?resize=750%2C576" alt="oaks" width="20">Oak Hill 7</td>
+      <td><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13265/20190822132838_707_mascot300Near.jpg" alt="falcons" width="20">Minford</td>
+      <td><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13584/20220830174546_475_mascot300Near.png" alt="pirates" width="20">Wheelersburg</td>
+      <td><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13319/20181029034049_403_mascot300.jpg" alt="mohawks" width="20">Northwest</td>
+      <td><img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/13280/20181010204148_26_mascot300Near.png" alt="owls" width="20">Mt. Healthy</td>
     </tr>
   </table>
 </div>
@@ -64,7 +65,7 @@ table, th, td {
     height: 40px;
   }
   tr:nth-child(even) {background-color:#86868B}
-  tr:nth-child(odd) {background-color: orange}
+  tr:nth-child(odd) {background-color: #FF6600}
 </div>
 </style>
 </head>
@@ -72,8 +73,9 @@ table, th, td {
    <body>
      
      <div class="header">
-       <h1> Waverly Tigers Athletics</h1>
-       <!---Insert Image Here--->  
+      <!-- <h1> Waverly Tigers Athletics</h1>
+    CSS Image URL:  https://bloximages.chicago2.vip.townnews.com/newswatchman.com/content/tncms/assets/v3/editorial/3/bc/3bc242f4-ed22-5756-be82-a7cb5ac47987/5dc1deab19937.image.jpg?resize=1200%2C598      
+Insert Image Here--->  
      </div>
        <style>
 
@@ -84,6 +86,7 @@ table, th, td {
      <div class="row pad flex flex-align-center">
 <nav class="main-navigation" role="navigation">
 <div class="navbar">
+  <img src="https://pbs.twimg.com/profile_images/1522013657877557249/YOTERpPf_400x400.jpg" alt="tigerpaw" width="50">
   <a href="#home">Home</a>
   <a href="#news">News</a>
   <div class="dropdown">
@@ -163,7 +166,7 @@ table, th, td {
 <div class="card">
   <img src="https://www.gannett-cdn.com/presto/2019/11/10/PCHI/f612b0a4-269e-45d1-8e55-d2ef7eb6e864-Waverly_Galia_L0A4866.jpg?width=1320&height=944&fit=crop&format=pjpg&auto=webp" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Bloom Carroll Matchup</b></h4> 
+    <h4><b>Q isnt terrible</b></h4> 
     <p>I don't know how this went. But we're going to use it.</p> 
   </div>
 </div>
@@ -181,12 +184,12 @@ table, th, td {
 <br>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column" style="background-color:#86868B";>
     <h3>Women's Volleyball</h3>
-    
+    <img src="https://bloximages.chicago2.vip.townnews.com/newswatchman.com/content/tncms/assets/v3/editorial/f/02/f021cab3-dad3-55fc-894f-7b552635f824/57bcba8428b26.image.jpg?resize=1200%2C882" alt="Volleyball" style="width:80%">
     <p>September 28 Home @7pm</p>
   </div>
-  <div class="column" style="background-color:#bbb;">
+  <div class="column" style="background-color:#86868B; width: 70%; margin-left: auto; margin-right: auto;">
     <h3>Football</h3>
     <img src="https://www.gannett-cdn.com/presto/2019/11/10/PCHI/f612b0a4-269e-45d1-8e55-d2ef7eb6e864-Waverly_Galia_L0A4866.jpg?width=1320&height=944&fit=crop&format=pjpg&auto=webp" alt="Football" style="width:80%">
     <p>September 29 Home @7pm</p>
@@ -194,20 +197,29 @@ table, th, td {
 </div>
 
 <div class="row">
-  <div class="column" style="background-color:#ccc;">
+  <div class="column" style="background-color:#86868B;">
     <h3>Cross Country</h3>
+    <img src="https://bloximages.chicago2.vip.townnews.com/newswatchman.com/content/tncms/assets/v3/editorial/c/a4/ca487084-a712-5c2e-b36b-6dc058cd6fc4/58260f5b52747.image.jpg?resize=1200%2C800" alt="Cross Country" style="width:80%">
     <p>Who Cares</p>
   </div>
-  <div class="column" style="background-color:#ddd;">
+  <div class="column" style="background-color:#86868B;">
     <h3>Soccer</h3>
+    <img src="https://bloximages.chicago2.vip.townnews.com/newswatchman.com/content/tncms/assets/v3/editorial/d/db/ddb9d99f-0006-5a52-89cd-a3dde44484ba/5b7b26e7d5ddd.image.jpg?resize=1200%2C617" alt="Soccer" style="width:80%">
     <p>Don't Care</p>
   </div>
 </div>
+       </body>
+     
+     <body>
+       <div id="boostersbtncontainer">
+         <div class="column" style="background-color:#ff6600; padding: 10px; width: 50%;">
+       <h1> Become a Booster!</h1>
+       <p> To learn how please email, blahblah@blah.com </p>
        
-
-
-
-
+       
+       
+       
+              
 
 
 
@@ -227,6 +239,8 @@ CSS
 .table {
   padding-left: 10px;
   padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -244,7 +258,7 @@ body {
 
 /* Style the header */
 .header {
-  background-image: url('https://bloximages.chicago2.vip.townnews.com/newswatchman.com/content/tncms/assets/v3/editorial/3/bc/3bc242f4-ed22-5756-be82-a7cb5ac47987/5dc1deab19937.image.jpg?resize=1200%2C598');
+  background-image: url('https://cmsv2-assets.apptegy.net/uploads/4475/file/213118/7490fc61-3c4e-4830-ab5c-61d97f28a222.png');
   background-size: cover;
   color: white;
   font-family: sans-serif;
@@ -261,9 +275,10 @@ body {
   overflow: hidden;
   background-color: #86868B;
   font-family: Sans-serif;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 5px;
+  padding-right: 0px;
   border: 3px solid #000000;
+  logo 
 }
 
 /* Links inside the navbar */
@@ -296,14 +311,14 @@ body {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: orange;
+  background-color: #ff6600;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ff6600;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -321,7 +336,8 @@ body {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: orange;
+  background-color: #000000;
+  color: #fff;
 }
 
 /* Show the dropdown menu on hover */
@@ -341,7 +357,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
 }
 
 .container {
@@ -351,10 +367,12 @@ body {
 /* Schedule Section */
 .schedulesection {
   float: center;
+  display: block;
   margin: 30px;
   text-align: center;
   font-size: 30px;
-  padding-top: 
+  padding-top: 5px
+    background-color: #86868B;
 }
 
   box-sizing: border-box;
@@ -378,20 +396,23 @@ body {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+  background-color: #FF8C00;
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #ddd;
-}
-
 .btn.active {
-  background-color: #666;
+  background-color: black;
   color: white;
 }
 
 
+.navbar img {
+  float: left;
+}
+
+.navbar img2 {
+  float:right;
+}
 
 
 
